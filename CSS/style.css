@@ -1,0 +1,671 @@
+/* CSS: Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo { /* Logo */
+    margin-right: auto;
+}
+
+
+.logo a {  /* Logo link */
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.logo a:hover { /* Logo link hover */
+    color: #ffd700;
+}
+
+
+.menu-toggle { /* Menu-toggle */
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-toggle:hover { /* Menu-toggle hover */
+    color: #ffd700;
+}
+
+.nav-menu { /* Navigatiemenu */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li { /* Navigatiemenu item */
+    margin-left: 20px;
+}
+
+.nav-menu li:first-child { /* Navigatiemenu item eerste kind */
+    margin-left: 0;
+}
+
+.nav-menu li a { /* Navigatiemenu link */
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover { /* Navigatiemenu link hover */
+    color: #ffd700;
+}
+
+
+/* CSS: Sidebar */
+.sidenavbar { /* Sidebar */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.close-btn { /* Sidebar - Sluitknop */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close-btn img { /* Sidebar - Sluitknop afbeelding */
+    width: 30px;
+    height: auto;
+}
+
+.sidenavbar ul {/* Sidebar - Lijst */
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidenavbar ul li { /* Sidebar - Lijst item */
+    padding: 15px 0;
+    text-align: center;
+}
+
+.sidenavbar ul li a { /* Sidebar - Lijst link */
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenavbar ul li a:hover { /* Sidebar - Lijst link hover */
+    color: #ffd700;
+}
+
+/* CSS: Footer */
+footer { /* Footer */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-top: auto; /* Keep the footer at the bottom */
+    bottom: 0;
+}
+
+/* CSS: Homepage (index.html) */
+#bodyindex { /* Body */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#content-wrapper { 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    text-align: center;
+    padding: 20px;
+}
+
+#profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#name {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#socials a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+#socials a:hover {
+    transform: translateY(-3px);
+}
+
+
+#socials img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+#body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    margin-bottom: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Ensure content stretches to fill height */
+}
+
+
+
+/* CSS: over (about.html) */
+#content-wrapper-about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px; /* Voeg afgeronde hoeken toe */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+#titleabout h1 {
+    font-size: 32px; /* Vergroot de lettergrootte */
+    color: #fff; /* Verander de tekstkleur */
+    text-align: center; /* Centreer de tekst */
+}
+
+#containerabout1 img {
+    width: 150px; /* Pas de breedte van de afbeelding aan */
+    border-radius: 50%; /* Maak de afbeelding rond */
+    margin-right: 20px; /* Voeg wat ruimte toe aan de rechterkant van de afbeelding */
+}
+
+#containerabout1 p, #containerabout2 p {
+    font-size: 18px; /* Vergroot de lettergrootte */
+    line-height: 1.8; /* Vergroot de regelafstand */
+    color: #fff; /* Verander de tekstkleur */
+}
+
+#profile-pic-about {
+    text-align: center; /* Om de afbeelding in het midden uit te lijnen */
+}
+
+#profile-pic-about img {
+    display: block; /* Om ervoor te zorgen dat de afbeelding in het midden wordt weergegeven */
+    margin: 0 auto; /* Om de afbeelding in het midden te centreren */
+    width: 300px; /* Pas de breedte van de afbeelding aan */
+    height: 300px; /* Pas de hoogte van de afbeelding aan */
+    border-radius: 50%; /* Maak de afbeelding rond */
+}
+
+/* CSS: vaardigheden (skills.html) */
+#content-wrapper-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#titleskills {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skill-category {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #272525;
+    background-color: #272525;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(25% - 20px); /* Groei, krimp, basis */
+    box-sizing: border-box; /* Zorgt ervoor dat padding en border in de box size zijn inbegrepen */
+}
+
+
+.skill img {
+    height: 120px; /* Pas de hoogte van de afbeelding aan */
+    width: 120px; /* Pas de breedte van de afbeelding aan */
+}
+
+.skill:hover {
+    transform: scale(1.1); /* Vergroot het element met 10% */
+    transition: transform 0.3s ease-in-out; /* Maak de overgang soepel */
+}
+
+
+
+
+
+/* Content education */
+/* Titel opmaak */
+#titleeducation {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#titleeducation h1 {
+    font-size: 36px;
+}
+
+/* Opleidingen lijst opmaak */
+#education-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.education-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #272525;
+    max-width: 400px;
+}
+
+.education-item.reverse {
+    flex-direction: column-reverse;
+}
+
+.education-content {
+    text-align: center;
+}
+
+.education-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.education-item:hover {
+    transform: scale(1.05); /* Vergroot het element met 10% */
+    transition: transform 0.3s ease-in-out; /* Maak de overgang soepel */
+}
+
+
+
+/* Content work */
+/* Titel opmaak */
+#titlework {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#titlework h1 {
+    font-size: 36px;
+}
+
+/* Werkervaring opmaak */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Werkervaring opmaak */
+.work-item {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #272525;
+    max-width: 600px;
+    position: relative; /* Voeg deze regel toe */
+}
+
+.work-item img {
+    max-width: 150px; /* Aangepast naar een kleinere waarde */
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.work-details {
+    flex: 1;
+}
+
+.work-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.work-details p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.work-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.work-details ul li {
+    margin-bottom: 5px;
+}
+
+.work-item:hover {
+    transform: scale(1.05); /* Vergroot het element met 10% */
+    transition: transform 0.3s ease-in-out; /* Maak de overgang soepel */
+}
+
+/* Laadbalk opmaak */
+/* Laadbalk wrapper opmaak */
+#progressbar-wrapper {
+    display: flex;
+    justify-content: center; /* Centreer horizontaal */
+    margin-bottom: 20px; /* Aangepast om consistentie te behouden */
+}
+
+/* Laadbalk opmaak */
+#progressbar-container {
+    width: 100%; /* Aangepast naar 100% breedte */
+    background-color: #f2f2f2;
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 600px; /* Voeg deze regel toe */
+}
+
+#progressbar {
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    width: 100%; /* Voeg deze regel toe */
+}
+
+.progress-bar-item {
+    flex-grow: 1;
+    background-color: #4CAF50; /* Voeg deze regel toe */
+}
+
+.color-box {
+    width: 20px; /* Breedte van het kleurvakje */
+    height: 20px; /* Hoogte van het kleurvakje */
+    margin-bottom: 10px; /* Ruimte onder het kleurvakje */
+    border-radius: 50%; /* Afgeronde hoeken */
+}
+
+/* Media queries voor responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .work-item {
+        max-width: calc(100% - 40px); /* Aangepast naar de breedte van het scherm minus de margin */
+    }
+    
+    .work-item img {
+        max-width: 100%; /* Aangepast naar 100% breedte */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    /* Media query voor responsiveness */
+    #progressbar-wrapper {
+        margin-bottom: 20px; /* Voeg een margin toe aan de onderkant van de progress bar wrapper */
+    }
+
+}
+
+
+/* Content Projects */
+#content-wrapper-projects {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+#project-list {
+    margin: 20px;
+}
+
+.project-item {
+    background-color: #f0f0f0; /* lichtgrijze achtergrond voor contrast */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #0077cc; /* blauw accent */
+    border-radius: 8px;
+    color: #333; /* donkere tekstkleur */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* subtiele schaduw */
+}
+
+.project-item h2 {
+    margin-top: 0;
+    color: #222; /* iets donkerder voor titels */
+}
+
+.project-item p {
+    margin: 5px 0;
+    color: #444;
+}
+
+.project-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+    color: #005fa3; /* iets donkerdere blauw bij hover */
+}
+
+
+
+
+
+/* Content contact */
+#content-wrapper-contact {
+    padding: 50px 0;
+    
+}
+
+/* Titel opmaak */
+#titlecontact {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#titlecontact h1 {
+    font-size: 36px;
+}
+
+/* Contact form */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #272525;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 20px; /* Hoogte voor naam en e-mail */
+}
+
+#contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 60px; /* Hoogte voor beschrijving */
+    resize: none;
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #1b1a1a;
+}
+
+/* Contact info */
+#contact-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#contact-info a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+#contact-info a:hover {
+    transform: translateY(-3px);
+}
+
+#contact-info img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Media queries voor responsiveness */
+@media screen and (max-width: 768px) {
+    #contact-form {
+        padding: 20px 10px;
+        margin: 20px;
+    }
+
+  
+}
+
+
+
+
+
+
+
+/* Responsiveness */
+@media screen and (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .sidenavbar.active {
+        width: 250px;
+    }
+
+    #profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    #name {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    #subtitle {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    #socials {
+        margin-top: 10px;
+    }
+
+    #socials img {
+        width: 30px;
+        height: 30px;
+    }
+}

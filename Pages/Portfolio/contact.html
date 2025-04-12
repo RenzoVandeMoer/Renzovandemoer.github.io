@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../CSS/style.css">
+</head>
+<body id="body" class="contact-page">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <div class="logo">
+            <a href="../../index.html">Renzo Van de Moer</a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="/Pages/Portfolio/about.html">Over</a></li>
+            <li><a href="/Pages/Portfolio/skills.html">Vaardigheden</a></li>
+            <li><a href="/Pages/Portfolio/study.html">Opleidingen</a></li>
+            <li><a href="/Pages/Portfolio/work.html">Werkervaring</a></li>
+            <li><a href="/Pages/Portfolio/projects.html">Projecten</a></li>
+            <li><a href="/Pages/Portfolio/contact.html">Contact</a></li>
+            <li><a href="/Pages/Portfolio/blog.html">Blog</a></li>  
+        </ul>
+    </nav>
+    
+    <!-- SIDENAVBAR -->
+    <div id="sidenavbar" class="sidenavbar">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <ul>
+            <li><a href="/Pages/Portfolio/about.html">Over</a></li>
+            <li><a href="/Pages/Portfolio/skills.html">Vaardigheden</a></li>
+            <li><a href="/Pages/Portfolio/study.html">Opleidingen</a></li>
+            <li><a href="/Pages/Portfolio/work.html">Werkervaring</a></li>
+            <li><a href="/Pages/Portfolio/projects.html">Projecten</a></li>
+            <li><a href="/Pages/Portfolio/contact.html">Contact</a></li>
+            <li><a href="/Pages/Portfolio/blog.html">Blog</a></li>  
+        </ul>
+    </div>
+
+   <!-- CONTENT -->
+    <div id="content-wrapper-contact">
+        <!-- TITLE -->
+        <div id="titlecontact">
+            <h1>Contact</h1>
+        </div>
+        <!-- CONTACT FORM -->
+        <div id="contact-form">
+            <form id="contactForm" action="#" method="post">
+                <label for="name">Naam</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Bericht</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="button" onclick="sendEmail()">Verzenden</button>
+            </form>
+        </div>
+
+        <!-- CONTACT INFO (linkedin, facebook, instagram, email)-->
+        <div id="contact-info">
+            <a href="https://www.linkedin.com/in/renzo-van-de-moer" target="_blank">
+                <img src="../../Images/SVG/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/renzo.vandemoer.9/" target="_blank">
+                <img src="../../Images/SVG/square-facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/renzovandemoer/" target="_blank">
+                <img src="../../Images/SVG/square-instagram.svg" alt="Instagram">
+            </a>
+            <a href="mailto:renzovdm@icloud.com">
+                <img src="../../Images/SVG/square-email.svg" alt="Email">
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Renzo Van de Moer | All rights reserved</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function sendEmail() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            var subject = "Nieuw bericht van website contactformulier";
+            var body = "Naam: " + name + "\n" +
+                       "E-mail: " + email + "\n\n" +
+                       "Bericht:\n" + message;
+
+            // Create a mailto link
+            var mailtoLink = "mailto:renzovdm@icloud.com" +
+                             "?subject=" + encodeURIComponent(subject) +
+                             "&body=" + encodeURIComponent(body);
+
+            // Open default email client with mailto link
+            window.location.href = mailtoLink;
+        }
+    </script>
+
+    <!-- JAVASCRIPT -->
+    <script src="/JS/script.js"></script>
+</body>
+</html>
